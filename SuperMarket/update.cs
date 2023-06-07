@@ -94,7 +94,7 @@ namespace SuperMarket
             try
             {
                 sqlpath.con.Open();
-                SqlCommand cmd = new SqlCommand("st_insertseller", sqlpath.con);
+                SqlCommand cmd = new SqlCommand("st_updateseller", sqlpath.con);
                 cmd.Parameters.AddWithValue("@id", id);
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.AddWithValue("@name", name);
